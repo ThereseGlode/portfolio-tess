@@ -1,23 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Min Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 bg-gray-800">
+    <h1 class="text-2xl font-bold">Therese Tonning</h1>
+    <nav class="space-x-4">
+      <a href="#om" class="hover:underline">Om meg</a>
+      <a href="#prosjekter" class="hover:underline">Prosjekter</a>
+      <a href="#kontakt" class="hover:underline">Kontakt</a>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Hei! Jeg er en webutvikler</h2>
+    <p class="text-lg text-gray-300">Jeg lager brukervennlige nettsider og elsker å kode kreative løsninger.</p>
+  </section>
+
+  <!-- Om meg -->
+  <section id="om" class="max-w-3xl mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold mb-4">Om meg</h3>
+    <p class="text-gray-300">
+      Jeg er en engasjert utvikler med lidenskap for design, funksjonalitet og brukervennlighet.
+      Jeg har erfaring med HTML, CSS, JavaScript og elsker å lære nye ting.
+    </p>
+  </section>
+
+  <!-- Prosjekter -->
+  <section id="prosjekter" class="bg-gray-800 py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-center">Mine Prosjekter</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Prosjektkort -->
+        <div class="bg-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2">Prosjekt Navn</h4>
+          <p class="text-gray-300">Kort beskrivelse av prosjektet ditt. Hva gjør det? Hvilke teknologier brukte du?</p>
+        </div>
+        <!-- Du kan kopiere flere prosjektkort her -->  
+        <div class="bg-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2">Prosjekt Navn</h4>
+          <p class="text-gray-300">Kort beskrivelse av prosjektet ditt. Hva gjør det? Hvilke teknologier brukte du?</p>
+        </div>
+
+        <div class="bg-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2">Prosjekt Navn</h4>
+          <p class="text-gray-300">Kort beskrivelse av prosjektet ditt. Hva gjør det? Hvilke teknologier brukte du?</p>
+        </div>
+
+        <div class="bg-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2">Prosjekt Navn</h4>
+          <p class="text-gray-300">Kort beskrivelse av prosjektet ditt. Hva gjør det? Hvilke teknologier brukte du?</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="max-w-3xl mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold mb-4">Kontakt</h3>
+    <p class="text-gray-300 mb-4">Ta gjerne kontakt på e-post: <a href="mailto:theresewiken@gmail.no" class="underline text-blue-400">theresewiken@gmail.no</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-800 text-gray-400">
+    © 2025 Therese Tonning. All rights reserved.
+  </footer>
+
+</body>
 </html>
