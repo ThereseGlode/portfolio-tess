@@ -1,1 +1,1 @@
-console.log('Hello!');
+console.log("Velkommen til portfolien din 🎉");

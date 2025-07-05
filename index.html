@@ -4,75 +4,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Min Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body>
 
   <!-- Header -->
-  <header class="flex justify-between items-center p-6 bg-gray-800">
-    <h1 class="text-2xl font-bold">Therese Tonning</h1>
-    <nav class="space-x-4">
-      <a href="#om" class="hover:underline">Om meg</a>
-      <a href="#prosjekter" class="hover:underline">Prosjekter</a>
-      <a href="#kontakt" class="hover:underline">Kontakt</a>
+  <header>
+    <h1>Ditt Navn</h1>
+    <nav>
+      <a href="#om">Om meg</a>
+      <a href="#prosjekter">Prosjekter</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="text-center py-20 bg-gradient-to-b from-gray-800 to-gray-900">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">Hei! Jeg er en webutvikler</h2>
-    <p class="text-lg text-gray-300">Jeg lager brukervennlige nettsider og elsker å kode kreative løsninger.</p>
+  <!-- Hero-seksjon -->
+  <section class="hero">
+    <h2>Hei! Jeg er en webutvikler</h2>
+    <p>Jeg lager kreative og brukervennlige nettsider.</p>
   </section>
 
   <!-- Om meg -->
-  <section id="om" class="max-w-3xl mx-auto px-4 py-16">
-    <h3 class="text-3xl font-bold mb-4">Om meg</h3>
-    <p class="text-gray-300">
-      Jeg er en engasjert utvikler med lidenskap for design, funksjonalitet og brukervennlighet.
-      Jeg har erfaring med HTML, CSS, JavaScript og elsker å lære nye ting.
-    </p>
+  <section id="om">
+    <h3>Om meg</h3>
+    <p>Jeg er en nysgjerrig utvikler som liker å leke med HTML, CSS og JavaScript.</p>
   </section>
 
   <!-- Prosjekter -->
-  <section id="prosjekter" class="bg-gray-800 py-16 px-4">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-3xl font-bold mb-8 text-center">Mine Prosjekter</h3>
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Prosjektkort -->
-        <div class="bg-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
-          <h4 class="text-xl font-semibold mb-2">Prosjekt Navn</h4>
-          <p class="text-gray-300">Kort beskrivelse av prosjektet ditt. Hva gjør det? Hvilke teknologier brukte du?</p>
-        </div>
-        <!-- Du kan kopiere flere prosjektkort her -->  
-        <div class="bg-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
-          <h4 class="text-xl font-semibold mb-2">Prosjekt Navn</h4>
-          <p class="text-gray-300">Kort beskrivelse av prosjektet ditt. Hva gjør det? Hvilke teknologier brukte du?</p>
-        </div>
+  <section id="prosjekter">
+    <h3>Mine Prosjekter</h3>
 
-        <div class="bg-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
-          <h4 class="text-xl font-semibold mb-2">Prosjekt Navn</h4>
-          <p class="text-gray-300">Kort beskrivelse av prosjektet ditt. Hva gjør det? Hvilke teknologier brukte du?</p>
-        </div>
-
-        <div class="bg-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
-          <h4 class="text-xl font-semibold mb-2">Prosjekt Navn</h4>
-          <p class="text-gray-300">Kort beskrivelse av prosjektet ditt. Hva gjør det? Hvilke teknologier brukte du?</p>
-        </div>
-
-      </div>
+    <div class="prosjektkort">
+      <h4>🍔 BurgerBestiller 9000</h4>
+      <p>Velg en burger, legg til bacon – og vær sulten med stil.</p>
+      <a href="#">Se prosjekt</a>
     </div>
+
+    <div class="prosjektkort">
+      <h4>📝 Handleliste Deluxe</h4>
+      <p>Legg til og fjern varer med JavaScript-magi. For deg som aldri husker melk.</p>
+      <a href="#">Se prosjekt</a>
+    </div>
+
   </section>
 
   <!-- Kontakt -->
-  <section id="kontakt" class="max-w-3xl mx-auto px-4 py-16">
-    <h3 class="text-3xl font-bold mb-4">Kontakt</h3>
-    <p class="text-gray-300 mb-4">Ta gjerne kontakt på e-post: <a href="mailto:theresewiken@gmail.no" class="underline text-blue-400">theresewiken@gmail.no</a></p>
+  <section id="kontakt">
+    <h3>Kontakt</h3>
+    <p>Send meg en e-post: <a href="mailto:din@email.no">din@email.no</a></p>
+
+    <div class="sosial">
+      <a href="https://github.com/dittbrukernavn" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/dittbrukernavn" target="_blank">LinkedIn</a>
+      <a href="https://instagram.com/dittbrukernavn" target="_blank">Instagram</a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-6 bg-gray-800 text-gray-400">
-    © 2025 Therese Tonning. All rights reserved.
+  <footer>
+    <p>© 2025 Ditt Navn. All rights reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
